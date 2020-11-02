@@ -7,10 +7,11 @@ name: CheckLabels
 on:
 #  push:
 #    branches: [ main ]
-#  pull_request:
-#    branches: [ main ]
-  pull_request_target:
-   types: [opened, labeled, unlabeled, synchronize]
+  pull_request:
+    branches: [ main ]
+    types: [opened, labeled, unlabeled, synchronize]
+#  pull_request_target:
+#   types: [opened, labeled, unlabeled, synchronize]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
